@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&display=swap');
+
+
+:root {
+    --canopy-green: #014038;
+    --meadow-mist: #96BAA0;
+    --sky-bloom: #BDD4DA;
+    --sunlit-petal: #F0C06D;
+    --cloudy-gray: #F7F7F7;
+    --detritus-green: #00231C;
+
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Calibri, 'Segoe UI', sans-serif;
+    --subtitle-font: 'Comfortaa', 'Trebuchet MS', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--detritus-green);
+    background-color: var(--cloudy-gray);
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+
+h3 {
+    font-family: var(--subtitle-font);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+header {
+    background-color: var(--canopy-green);
+    color: var(--cloudy-gray);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+header img {
+    border-radius: 50%;
+    background-color: var(--cloudy-gray);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+nav a {
+    color: var(--cloudy-gray);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--meadow-mist);
+    color: var(--detritus-green);
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--sunlit-petal);
+    outline-offset: 2px;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+main section {
+    background-color: #ffffff;
+    border: 1px solid var(--sky-bloom);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    color: var(--canopy-green);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--meadow-mist);
+    padding-bottom: 0.4rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+main a {
+    color: var(--canopy-green);
+    font-weight: bold;
+}
+
+
+#hero {
+    background-color: var(--sky-bloom);
+    text-align: center;
+}
+
+#hero h2 {
+    border-bottom: none;
+    font-size: 2rem;
+}
+
+#hero p {
+    max-width: 700px;
+    margin: 0 auto 1.25rem auto;
+}
+
+#hero img {
+    display: block;
+    margin: 0 auto 1.25rem auto;
+    border-radius: 8px;
+}
+
+
+#featured-categories article {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 220px;
+    margin: 0.5rem 1%;
+    padding: 1rem;
+    background-color: var(--cloudy-gray);
+    border: 1px solid var(--meadow-mist);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#featured-categories img {
+    border-radius: 6px;
+}
+
+button {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--detritus-green);
+    background-color: var(--sunlit-petal);
+    border: 2px solid var(--canopy-green);
+    border-radius: 6px;
+    padding: 0.6rem 1.4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--canopy-green);
+    color: var(--cloudy-gray);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+caption {
+    font-family: var(--subtitle-font);
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--canopy-green);
+    margin-bottom: 0.75rem;
+}
+
+th, td {
+    border: 1px solid var(--meadow-mist);
+    padding: 1rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--canopy-green);
+    color: var(--cloudy-gray);
+    font-family: var(--heading-font);
+}
+
+#product-gallery {
+    width: 100%;
+}
+
+#product-gallery td {
+    width: 33%;
+}
+
+#product-gallery img {
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+#product-gallery button {
+    margin-top: 0.5rem;
+}
+
+
+#hours tr:nth-child(even) {
+    background-color: var(--cloudy-gray);
+}
+
+#about-us img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--canopy-green);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+#customer-testimonials article,
+#upcoming-workshops article {
+    background-color: var(--cloudy-gray);
+    border-left: 6px solid var(--meadow-mist);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#customer-testimonials p {
+    font-style: italic;
+}
+
+#community-involvement img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--canopy-green);
+    color: var(--cloudy-gray);
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+footer section {
+    margin-bottom: 1.5rem;
+}
+
+footer input[type="email"] {
+    width: auto;
+    margin: 0 0.5rem;
+}
+
+#social-media a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--cloudy-gray);
+    color: var(--canopy-green);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin: 0 0.4rem;
+    text-decoration: none;
+}
+
+#social-media a:hover,
+#social-media a:focus {
+    background-color: var(--sunlit-petal);
+    color: var(--detritus-green);
+}
+
+
+footer nav ul {
+    justify-content: center;
+}
+
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    #featured-categories article {
+        display: block;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    #product-gallery td {
+        display: block;
+        width: 100%;
+    }
+
+    #product-gallery tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
