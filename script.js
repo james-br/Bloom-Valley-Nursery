@@ -1,8 +1,19 @@
 
+// const subscribeButton = document.getElementById("subscribe-btn");
+// if (subscribeButton) {
+//     subscribeButton.addEventListener("click", function () {
+//         alert("Thank you for subscribing.");
+//     });
+// }
+
 const subscribeButton = document.getElementById("subscribe-btn");
 if (subscribeButton) {
     subscribeButton.addEventListener("click", function () {
-        alert("Thank you for subscribing.");
+        const emailInput = document.getElementById("subscribe-email");
+        if (emailInput.reportValidity()) {
+            alert("Thank you for subscribing.");
+            emailInput.value = "";
+        }
     });
 }
 
