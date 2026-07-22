@@ -358,7 +358,7 @@ footer nav ul {
     }
 }
 
-/* Respect users who prefer reduced motion */
+
 @media (prefers-reduced-motion: reduce) {
     * {
         transition: none !important;
@@ -366,3 +366,50 @@ footer nav ul {
     }
 }
 
+/* Cart CSS */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 35, 28, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+ 
+.modal-overlay.open {
+    display: flex;
+}
+ 
+.modal-content {
+    background-color: #ffffff;
+    border: 2px solid var(--canopy-green);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+}
+ 
+.modal-content h2 {
+    color: var(--canopy-green);
+    margin-bottom: 1rem;
+}
+ 
+#cart-items {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+ 
+#cart-items li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--meadow-mist);
+}
+ 
+.modal-content button {
+    margin: 0.3rem;
+}
